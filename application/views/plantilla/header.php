@@ -17,9 +17,8 @@
     <!-- encriptar  -->
     <!-- <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script> -->
     <!-- <script src="<?php echo base_url(); ?>dist/code/sha3.js"></script> -->
-
-      
-    </style>
+      <link rel="stylesheet" type="text/css" href="<?=base_url()?>dist/dataTables/datatables.min.css"/>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body class="text-center">
     <div class="d-flex bg-dark flex-column">
@@ -44,4 +43,3 @@
     <div class="">
 
 
-  

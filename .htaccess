@@ -1,9 +1,14 @@
-php_value date.timezone 'America/La_Paz'
-Options +FollowSymLinks
-Options -Indexes
-DirectoryIndex index.html index.php
-RewriteEngine on
-RewriteCond $1 !^(index\.php|images|robots\.txt)
+#php_value date.timezone 'America/La_Paz'
+#Options +FollowSymLinks
+#Options -Indexes
+#DirectoryIndex index.html index.php
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php|images|robots\.txt)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ /Gen-QR/index.php/$1 [L,QSA]
+
+RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /Gen-QR/index.php/$1 [L,QSA]
+RewriteRule ^(.*)$ index.php/$1 [L]
